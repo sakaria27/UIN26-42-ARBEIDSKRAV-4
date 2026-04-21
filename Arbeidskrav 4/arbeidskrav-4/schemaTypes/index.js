@@ -1,2 +1,2 @@
 import arbeidskrav from "./arbeidskrav"
-export const schemaTypes = []
+export const schemaTypes = [arbeidskrav]
