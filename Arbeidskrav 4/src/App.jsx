@@ -1,10 +1,15 @@
 import ProfilStian from "./ProfileStian";
-import "./App.css";
+import ProfilBilde from "./assets/ProfilBilde.jpg"
 
 function App() {
   return (
     <main>
-      <ProfilStian />
+      <ProfilStian
+        navn="Stian Hønstvedt"
+        epost="stianhon@hiof.no"
+        studie="Bachelorstudium i informasjonssystemer"
+        bilde={ProfilBilde}
+      />
     </main>
   );
 }

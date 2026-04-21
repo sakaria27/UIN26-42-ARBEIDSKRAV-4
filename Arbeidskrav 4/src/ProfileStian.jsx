@@ -1,31 +1,34 @@
 import "./ProfilStian.css";
-import stianBilde from "./assets/ProfilBilde.jpg";
 
-function ProfilStian() {
+function ProfilStian({ navn, epost, studie, bilde }) {
   return (
     <article className="ProfilStian">
 
       <header>
-        <h2>Stian Hønstvedt</h2>
+        <h2>{navn || "Ukjent navn"}</h2>
       </header>
 
-      <figure>
+      <figure className="profil-bilde">
         <img
-          src={stianBilde}
-          alt="Profilbilde av Stian Hønstvedt"
+          src={bilde || "https://via.placeholder.com/150"}
+          alt={navn ? `Profilbilde av ${navn}` : "Profilbilde"}
         />
       </figure>
 
-      <p>
-        <strong>E-post:</strong>{" "}
-        <a href="mailto:stianhon@hiof.no">
-          stianhon@hiof.no
-        </a>
-      </p>
+      {epost && (
+        <p>
+          <strong>E-post:</strong>{" "}
+          <a href={`mailto:${epost}`}>
+            {epost}
+          </a>
+        </p>
+      )}
 
-      <p>
-        <strong>Studie:</strong> Bachelorstudium i informasjonssystemer
-      </p>
+      {studie && (
+        <p>
+          <strong>Studie:</strong> {studie}
+        </p>
+      )}
 
     </article>
   );
