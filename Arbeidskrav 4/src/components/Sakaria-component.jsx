@@ -8,7 +8,7 @@ function Sakariacomponent(){
             </figure>
             <section>
                 <h2>Sakaria</h2>
-                <p>Informasjonsteknolgi</p>
+                <p> Bachelorstudium i informasjonssystemer</p>
                 <a href="mailto:sakarihm@hiof.no">sakarihm@hiof.no</a>
             </section>
         </article>
