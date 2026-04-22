@@ -1,4 +1,4 @@
-import "./ProfilStian.css";
+import "./Stian-component.css";
 
 function ProfilStian({ navn, epost, studie, bilde }) {
   return (
