@@ -1,3 +1,7 @@
+
+import StefanComponent from './components/Stefan-component';
+
+function App() {
 import { useEffect, useState } from "react"
 import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
@@ -16,6 +20,8 @@ function App(){
       <header>
         <h1>UIN26_42</h1>
       </header>
+      <section>
+        <StefanComponent />
      
       <section>
         <h2>Gruppemedlemmer</h2>
