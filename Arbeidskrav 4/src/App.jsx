@@ -3,7 +3,7 @@ import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
 import StefanComponent from "./components/Stefan-component"
 import Stiancomponent from "./components/Stian-component"
-import ProfilStian from "./components/Stian-component"
+
 
 function App(){
   const [arbeidskrav, SetArbeidskrav] = useState([])
@@ -20,16 +20,17 @@ function App(){
         <h1>UIN26_42</h1>
       </header>
      
-      <section className="gruppemedlemmer">
+      <section >
         <h2>Gruppemedlemmer</h2>
-        <Sakariacomponent />
-        <StefanComponent />
-        <Stiancomponent /> 
-        <ProfilStian /> 
+         <ul className="gruppemedlemmer">
+        <li><Sakariacomponent /></li>
+        <li><StefanComponent /></li>
+        <li><Stiancomponent /></li>
+        </ul>
       </section>
 
       <section className="arbeidskrav-liste">
-        <h2>arbeidskrav</h2>
+        <h2>Arbeidskrav</h2>
          {arbeidskrav.map((ak) => (
           <article key={ak._id}>
             <h3>{ak.tittel}</h3>
