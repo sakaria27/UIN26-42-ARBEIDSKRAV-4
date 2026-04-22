@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
 import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
+<<<<<<< Updated upstream
+=======
+import StefanComponent from "./components/Stefan-component"
+import Stiancomponent from "./components/Stian-component"
+>>>>>>> Stashed changes
 
 function App(){
   const [arbeidskrav, SetArbeidskrav] = useState([])
@@ -20,6 +25,11 @@ function App(){
       <section>
         <h2>Gruppemedlemmer</h2>
         <Sakariacomponent />
+<<<<<<< Updated upstream
+=======
+        <StefanComponent />
+        <Stiancomponent /> 
+>>>>>>> Stashed changes
       </section>
 
       <section>
