@@ -1,0 +1,40 @@
+.sakaria-card {
+  background-color: #1a1a2e;
+  color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.sakaria-card figure {
+  margin: 0 0 1rem 0;
+}
+
+.sakaria-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sakaria-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.sakaria-card p {
+  font-size: 0.95rem;
+  color: #a0a0c0;
+  margin-bottom: 0.5rem;
+}
+
+.sakaria-card a {
+  color: #7b7bff;
+  text-decoration: none;
+}
+
+.sakaria-card a:hover {
+  text-decoration: underline;
+}
