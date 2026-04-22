@@ -1,11 +1,11 @@
 export default {
     name: 'arbeidskrav',
     title: 'Arbeidskrav',
-    type: 'documet',
+    type: 'document',
     fields:[
         {
             name: 'nummer',
-            title:'nummer',
+            title:'Nummer',
             type: 'number',
         },
 
