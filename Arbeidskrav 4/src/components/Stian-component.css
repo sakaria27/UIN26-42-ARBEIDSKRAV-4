@@ -1,69 +1,43 @@
-.ProfilStian {
-  max-width: 340px;
-  margin: 2.5rem auto;
-  padding: 2rem;
+.profil-stian-card {
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 1.5rem;
 
-  background: #1e1e2f;
-  color: #f1f1f1;
+  background-color: #1e1e2f;
+  color: #ffffff;
 
   border-radius: 16px;
-
-  /* subtil dobbel skygge for dybde */
-  box-shadow:
-    0 8px 20px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.05);
-
-  /* liten accent-linje på toppen */
-  border-top: 4px solid #00d4ff;
-
   text-align: center;
-
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.ProfilStian:hover {
-  transform: translateY(-4px);
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(255, 255, 255, 0.08);
+/* Bildedel */
+.profil-stian-card figure {
+  margin: 0 0 1rem 0;
 }
 
-/* Navn */
-.ProfilStian h2 {
-  margin-bottom: 1rem;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-}
-
-/* Bilde */
-.ProfilStian img {
-  width: 140px;
-  height: 140px;
-
-  border-radius: 10px;
+.profil-stian-card img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 
-  margin-bottom: 1rem;
-
-  /* diskret ramme */
-  border: 2px solid rgba(0, 212, 255, 0.4);
+  border-radius: 12px;
 }
 
-/* Tekst */
-.ProfilStian p {
+/* Tekstdel */
+.profil-stian-card section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.profil-stian-card section p {
   margin: 0.5rem 0;
-  font-size: 0.95rem;
 }
 
-/* Link */
-.ProfilStian a {
+/* E-post link */
+.profil-stian-card a {
   color: #00d4ff;
   text-decoration: none;
-  font-weight: 500;
 }
 
-.ProfilStian a:hover {
+.profil-stian-card a:hover {
   text-decoration: underline;
 }
