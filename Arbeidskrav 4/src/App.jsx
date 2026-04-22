@@ -3,6 +3,7 @@ import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
 import StefanComponent from "./components/Stefan-component"
 import Stiancomponent from "./components/Stian-component"
+import ProfilStian from "./components/Stian-component"
 
 function App(){
   const [arbeidskrav, SetArbeidskrav] = useState([])
@@ -24,6 +25,7 @@ function App(){
         <Sakariacomponent />
         <StefanComponent />
         <Stiancomponent /> 
+        <ProfilStian /> 
       </section>
 
       <section className="arbeidskrav-liste">

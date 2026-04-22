@@ -1,0 +1,43 @@
+.profil-stian-card {
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+
+  background-color: #1e1e2f;
+  color: #ffffff;
+
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* Bildedel */
+.profil-stian-card figure {
+  margin: 0 0 1rem 0;
+}
+
+.profil-stian-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+/* Tekstdel */
+.profil-stian-card section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.profil-stian-card section p {
+  margin: 0.5rem 0;
+}
+
+/* E-post link */
+.profil-stian-card a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.profil-stian-card a:hover {
+  text-decoration: underline;
+}
