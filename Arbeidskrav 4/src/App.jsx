@@ -1,24 +1,8 @@
-import ProfilStian from "./ProfileStian";
-import ProfilBilde from "./assets/ProfilBilde.jpg"
-
-function App() {
-  return (
-    <main>
-      <ProfilStian
-        navn="Stian Hønstvedt"
-        epost="stianhon@hiof.no"
-        studie="Bachelorstudium i informasjonssystemer"
-        bilde={ProfilBilde}
-      />
-    </main>
-  );
-
-import StefanComponent from './components/Stefan-component';
-
-function App() {
 import { useEffect, useState } from "react"
 import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
+import StefanComponent from "./components/Stefan-component"
+import ProfilStian from "./components/Stian-component"
 
 function App(){
   const [arbeidskrav, SetArbeidskrav] = useState([])
@@ -34,12 +18,12 @@ function App(){
       <header>
         <h1>UIN26_42</h1>
       </header>
-      <section>
-        <StefanComponent />
      
       <section>
         <h2>Gruppemedlemmer</h2>
         <Sakariacomponent />
+        <StefanComponent />
+        <ProfilStian /> 
       </section>
 
       <section>
@@ -56,5 +40,4 @@ function App(){
 }
   
 
-export default App;
 export default App
