@@ -1,4 +1,5 @@
 import "./Stian-component.css";
+import stianProfil from "../assets/bildeStian.jpg";
 import stianProfil from "./assets/bildeStian.jpg";
 
 function Stiancomponent() {

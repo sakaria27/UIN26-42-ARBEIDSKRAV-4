@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { client } from "./sanityClient"
 import Sakariacomponent from "./components/Sakaria-component"
 import StefanComponent from "./components/Stefan-component"
+import Stiancomponent from "./components/Stian-component"
 import ProfilStian from "./components/Stian-component"
 
 function App(){
@@ -19,14 +20,15 @@ function App(){
         <h1>UIN26_42</h1>
       </header>
      
-      <section>
+      <section className="gruppemedlemmer">
         <h2>Gruppemedlemmer</h2>
         <Sakariacomponent />
         <StefanComponent />
+        <Stiancomponent /> 
         <ProfilStian /> 
       </section>
 
-      <section>
+      <section className="arbeidskrav-liste">
         <h2>arbeidskrav</h2>
          {arbeidskrav.map((ak) => (
           <article key={ak._id}>
